@@ -61,6 +61,7 @@ function createCloud(x,y,z){
 
 function createHouse(x,y,z){
   let house=document.createElement("a-entity");
+  house.setAttribute("scale", "0.8 0.7")
 
   let wall=document.createElement("a-box");
   wall.setAttribute("width","3");
