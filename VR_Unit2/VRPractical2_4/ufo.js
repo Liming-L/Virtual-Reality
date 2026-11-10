@@ -29,6 +29,14 @@ class UFO{
     bottom.setAttribute("position","0 -0.2 0");
     this.obj.append(bottom);
 
+    let bottom1=document.createElement("a-cone");
+    bottom1.setAttribute("radius-bottom","1.3");
+    bottom1.setAttribute("height","2.8");
+    bottom1.setAttribute("opacity","0.7");
+    bottom1.setAttribute("color","yellow");
+    bottom1.setAttribute("position","0 -0.35 0");
+    this.obj.append(bottom1);
+
     let light1=document.createElement("a-sphere");
     light1.setAttribute("radius","0.09");
     light1.setAttribute("color","lime");

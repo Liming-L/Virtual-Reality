@@ -18,7 +18,8 @@ class Rocket{
     let base=document.createElement("a-cylinder");
     base.setAttribute("radius","0.5");
     base.setAttribute("height","2");
-    base.setAttribute("color","grey");
+    base.setAttribute("src","Danger.jpg");
+    base.setAttribute("repeat","2 1");
     base.setAttribute("position","0 -1.5 -2");
     this.obj.append(base);
     
@@ -29,6 +30,7 @@ class Rocket{
     bottom.setAttribute("color", "orange");
     bottom.setAttribute("position", "0 -3.5 -2");
     bottom.setAttribute("rotation", "180 0 0");
+    bottom.setAttribute("opacity","0.8");
     this.obj.append(bottom);
 
     this.obj.setAttribute("position", {x:x, y:y, z:z});
