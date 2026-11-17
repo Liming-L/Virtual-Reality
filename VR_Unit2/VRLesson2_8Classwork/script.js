@@ -1,17 +1,17 @@
-let target;
+let entity;
 
 window.addEventListener("DOMContentLoaded",function() {
-  target = document.querySelector("#target");
-  target.a = 0;
-  target.da = -1;
+  entity = document.querySelector("#entity");
+  entity.a = 0;
+  entity.da = -1;
 
   loop();
 })
 
 function loop(){
-  target.a += target.da;
+  entity.a += entity.da;
 
-  target.setAttribute("rotation",{x:target.a, y:0, z: 0});
+  entity.setAttribute("rotation",{x:entity.a, y:0, z: 0});
 
   window.requestAnimationFrame( loop );
 }
